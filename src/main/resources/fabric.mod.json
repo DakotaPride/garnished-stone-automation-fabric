@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "garnishedstoneautomation",
+  "version": "${version}",
+  "name": "Garnished Stone Automation",
+  "description": "Makes Crimsite, Veridium, Asurine, and Ochrum automatable once again using Create: Garnished",
+  "authors": [
+    "DakotaPride"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/garnished-stone-automation",
+    "sources": "https://github.com/DakotaPride/garnished-stone-automation"
+  },
+  "license": "MIT",
+  "icon": "assets/garnishedstoneautomation/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.dakotapride.garnishedstoneautomation.GarnishedStoneAutomation"
+    ],
+    "client": [
+      "net.dakotapride.garnishedstoneautomation.GarnishedStoneAutomationClient"
+    ],
+    "jei_mod_plugin": [
+      "net.dakotapride.garnishedstoneautomation.compat.jei.GarnishedStoneAutomationJEI"
+    ]
+  },
+  "mixins": [
+    "garnishedstoneautomation.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "${minecraft_version}",
+    "fabricloader": ">=${fabric_loader_version}",
+    "fabric-api": ">=${fabric_api_version}",
+    "create": "${create_version}",
+    "garnished": "*"
+  }
+}
