@@ -1,7 +1,9 @@
 package net.dakotapride.garnishedstoneautomation;
 
-import com.simibubi.create.Create;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+import com.simibubi.create.Create;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.item.ItemDescription;
 import com.simibubi.create.foundation.item.KineticStats;
@@ -11,13 +13,7 @@ import com.tterrag.registrate.util.nullness.NonNullSupplier;
 
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
 import net.fabricmc.api.ModInitializer;
-
 import net.minecraft.resources.ResourceLocation;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import plus.dragons.createdragonlib.lang.Lang;
 
 public class GarnishedStoneAutomation implements ModInitializer {
 
